@@ -1,0 +1,12 @@
+{
+  "type": "Yanlış alıcıya e-posta gönderimi",
+  "detected_at": "2026-01-31 22:30",
+  "system": "Kurumsal e-posta",
+  "detected_by": "Uyum Birimi",
+  "data_types": ["identity", "contact", "financial"],
+  "special_category": false,
+  "affected_count": 12,
+  "exfiltration_status": "suspected",
+  "encryption_status": "unknown",
+  "log_status": "available"
+}
