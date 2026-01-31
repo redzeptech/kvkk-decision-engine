@@ -1,4 +1,6 @@
 # KVKK Decision Engine
+![CI](https://github.com/redzeptech/kvkk-decision-engine/actions/workflows/ci.yml/badge.svg)
+
 
 KVKK kapsamındaki kişisel veri ihlali olaylarında; olayın niteliğine göre **risk derecelendirmesi**, **gerekçeli değerlendirme (karar izi)** ve **rapor taslağı** üreten karar destek aracıdır.
 
