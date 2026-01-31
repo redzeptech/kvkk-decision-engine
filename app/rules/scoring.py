@@ -38,3 +38,10 @@ def calculate_risk_score(incident):
         level = "Kritik"
 
     return score, level, trace
+    return score, level, trace
+
+
+def calculate_risk(incident):
+    # CI ve diğer modüller calculate_risk bekliyor
+    return calculate_risk_score(incident)
+
