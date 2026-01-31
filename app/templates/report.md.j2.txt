@@ -1,0 +1,37 @@
+# Kişisel Veri İhlali Ön Değerlendirme Raporu (Taslak)
+
+> **Uyarı:** Bu belge karar destek amaçlı bir taslaktır. Nihai değerlendirme kurumun uyum/hukuk birimlerince yapılmalıdır.
+
+## 1. Olay Bilgileri
+- **Olay Türü:** {{ incident.type }}
+- **Tespit Tarihi/Saati:** {{ incident.detected_at }}
+- **Etkilenen Sistem/Servis:** {{ incident.system }}
+- **İlk Tespit Kaynağı:** {{ incident.detected_by }}
+
+## 2. Veri Kapsamı
+- **Veri Türleri:** {{ incident.data_types | join(", ") }}
+- **Özel Nitelikli Veri:** {{ "Evet" if incident.special_category else "Hayır" }}
+- **Etkilenen Kişi Sayısı (tahmini):** {{ incident.affected_count }}
+
+## 3. Teknik Durum
+- **Veri Dışarı Çıkışı:** {{ incident.exfiltration_status }}
+- **Şifreleme Durumu:** {{ incident.encryption_status }}
+- **Log/Delil Durumu:** {{ incident.log_status }}
+
+## 4. Risk Değerlendirmesi
+- **Risk Skoru:** {{ result.score }}/100
+- **Risk Seviyesi:** {{ result.level }}
+
+### 4.1 Gerekçeli Değerlendirme (Karar İzi)
+{% for item in result.trace %}
+- {{ item }}
+{% endfor %}
+
+## 5. Önerilen Aksiyonlar
+{% for a in result.actions %}
+- {{ a }}
+{% endfor %}
+
+## 6. Ek Notlar
+- Bu taslak, olayın ilk değerlendirmesine yöneliktir.
+- Bulgular güncellendikçe rapor revize edilmelidir.
