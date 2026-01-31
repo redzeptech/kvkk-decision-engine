@@ -27,3 +27,15 @@ Python 3.10+ önerilir.
 pip install -r requirements.txt
 py app/cli.py -i data/incident_examples.json -o out/report.md
 Bu komut, örnek olay dosyasını kullanarak `out/report.md` yolunda bir rapor taslağı üretir.
+## Kullanım (Rapor üretimi)
+
+```bash
+py app/cli.py -i data/incident_examples.json -o out/report.md
+Risk Skoru: 62/100
+Risk Seviyesi: Yüksek
+Gerekçeli Değerlendirme:
+- Finansal veri (+25)
+- Veri dışarı çıkışı şüpheli (+12)
+Önerilen Aksiyonlar:
+- Olay kaydı oluşturulması
+- Etkilenen hesapların kontrolü
