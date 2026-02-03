@@ -1,5 +1,6 @@
 
-![Uploading KVKK Decision Engine.png…]()
+<img width="963" height="420" alt="KVKK Decision Engine" src="https://github.com/user-attachments/assets/2e07ad57-3a5b-47d7-bc04-54406d7d9099" />
+
 
 # KVKK Decision Engine
 ![CI](https://github.com/redzeptech/kvkk-decision-engine/actions/workflows/ci.yml/badge.svg)
